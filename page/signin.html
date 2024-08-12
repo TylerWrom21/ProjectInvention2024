@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section class="sign-in">
+        <div class="sign-in-card">
+            <h1>Create Account</h1>
+            <div class="form-contact">
+                <div class="field">
+                  <input type="text" required autocomplete="off" id="name">
+                  <label for="name" title="Input Name" data-title="Name"></label>
+                </div>
+                <div class="field">
+                  <input type="text" required autocomplete="on" id="email">
+                  <label for="email" title="Input Email" data-title="Email"></label>
+                </div>
+                <div class="field">
+                  <input type="number" required autocomplete="on" id="phonenumber">
+                  <label for="phonenumber" title="Input Phone Number" data-title="Phone Number"></label>
+                </div>
+                <div class="field">
+                  <input type="text" required autocomplete="off" minlength="25">
+                  <label for="msg" title="Input Message" data-title="Message"></label>
+                </div>
+                <div class="field">
+                    <button type="submit">Submit</button>
+                </div>
+            <!-- </div> -->
+            <!-- <p>OR</p> -->
+                <div class="login-gap">
+                    <p>Already have account? <a href="/page/login.html">Login</a></p>
+                </div>
+                <!-- <div class="form-contact"> -->
+                <div class="field">
+                    <p><i class='bx bxl-google'></i>Continue with Google</p>
+                </div>
+                <div class="field">
+                    <p><i class='bx bxl-github'></i>Continue with Github</p>
+                </div>
+                <div class="field">
+                    <p><i class='bx bxl-microsoft'></i>Continue with Microsoft</p>
+                </div>
+            </div>
+        </div>
+        <!-- customshaped -->
+        <div class="customrectangle"></div>
+        <div class="customrectanglecorner"></div>
+    </section>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -12,40 +12,47 @@
     <section class="sign-in">
         <div class="sign-in-card">
             <h1>Welcome Back</h1>
-            <div class="default-login">
-                <!-- <div class="entryarea">
-                    <input class="input-login" type="email" required>
-                    <div class="labelline">Email</div>
+            <div class="form-contact">
+                <div class="field">
+                  <input type="text" required autocomplete="off" id="name">
+                  <label for="name" title="Input Name" data-title="Name"></label>
+                </div>
+                <div class="field">
+                  <input type="text" required autocomplete="on" id="email">
+                  <label for="email" title="Input Email" data-title="Email"></label>
+                </div>
+                <!-- <div class="field">
+                  <input type="number" required autocomplete="on" id="phonenumber">
+                  <label for="phonenumber" title="Input Phone Number" data-title="Phone Number"></label>
+                </div>
+                <div class="field">
+                  <input type="text" required autocomplete="off" minlength="25">
+                  <label for="msg" title="Input Message" data-title="Message"></label>
                 </div> -->
-                <div class="entryarea">
-                    <input class="input-login" type="text" required>
-                    <div class="labelline">Email</div>
-                </div>
-                <div class="entryarea">
-                    <input class="input-login" type="text" required>
-                    <div class="labelline">Password</div>
-                </div>
-                <div class="button-submit">
+                <div class="field">
                     <button type="submit">Submit</button>
                 </div>
-            </div>
+            <!-- </div> -->
             <!-- <p>OR</p> -->
-            <div class="login-gap">
-                
-            </div>
-            <div class="suggest-login">
-                <div class="entryarea">
-                    <p><i class='bx bxl-google'></i>Login With Google</p>
+                <div class="login-gap">
+                    <p>Dont Have Account? <a href="/page/signin.html">Login</a></p>
                 </div>
-                <div class="entryarea">
-                    <p><i class='bx bxl-github'></i>Login With Github</p>
+                <!-- <div class="form-contact"> -->
+                <div class="field">
+                    <p><i class='bx bxl-google'></i>Continue with Google</p>
                 </div>
-                <div class="entryarea">
-                    <p><i class='bx bxl-microsoft'></i>Login With Microsoft</p>
+                <div class="field">
+                    <p><i class='bx bxl-github'></i>Continue with Github</p>
+                </div>
+                <div class="field">
+                    <p><i class='bx bxl-microsoft'></i>Continue with Microsoft</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- customshaped -->
+    <div class="customrectangle"></div>
+    <div class="customrectanglecorner"></div>
     <script src="../script.js"></script>
 </body>
 </html>
