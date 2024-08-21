@@ -1,0 +1,154 @@
+/* signin login  */
+.sign-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+  
+  .customrectangle {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    border-bottom: 50vh solid var(--darkblue);
+    border-left: 100vw solid transparent;
+    border-right: 0 solid transparent;
+    height: 10rem;
+    width: 100vw;
+    /* width: 100vw;
+    height: 30vh;
+    border-bottom: 30vh solid red;
+    border-left: 100vw solid transparent; */
+    /* width: 100vw;
+    height: 30vh;
+    transform: skew(20deg);
+    transform: skewY(-15deg);
+    background: var(--darkblue); */
+  }
+  
+  .customrectanglecorner {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 30vh;
+    border-bottom: 30vh solid var(--lightblue);
+    border-left: 100vw solid transparent;
+  }
+  
+  .sign-in-card {
+    width: 380px;
+    background: var(--white);
+    padding: var(--navbarlist);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: var(--borderradius);
+    position: relative;
+    z-index: 10;
+    /* border: var(--borderline) var(--black); */
+  }
+  
+  /* .sign-in-card h1 {
+    font-size: var(--heading);
+    font-weight: var(--headerw);
+  } */
+  .sign-in-card .entryarea {
+    position: relative;
+    height: 7.5rem;
+    /* padding: var(--navbarlist); */
+  }
+  
+  .sign-in-card h1 {
+    font-size: var(--heading);
+    padding-bottom: var(--header);
+    color: var(--black);
+  }
+  
+  .sign-in-card .entryarea .labelline {
+    font-size: var(--textp);
+    font-weight: var(--textw);
+    line-height: var(--logininput);
+    padding: var(--navbarlist);
+    text-align: left;
+    background: var(--white);
+    margin: var(--tablet);
+    color: var(--black);
+    transition: var(--transition);
+    /* width: 450px; */
+    overflow: hidden;
+  }
+  
+  .sign-in-card button {
+    font-size: var(--textp);
+    letter-spacing: .1em;
+    font-weight: var(--textw);
+    line-height: var(--logininput);
+    padding: var(--navbarlist);
+    border-radius: var(--borderradius);
+    border: var(--borderline) var(--black);
+    background: var(--lightblue);
+    color: var(--white);
+    width: 100%;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .sign-in-card button:hover {
+    background: var(--darkblue);
+  }
+  
+  /* .suggest-login .entryarea {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 7rem;
+    border: var(--borderline) var(--black);
+    border-radius: var(--borderradius);
+    width: 100%;
+  } */
+  
+  /* .suggest-login p:hover {
+    background: var(--lightgray);
+  }
+  
+  .suggest-login  p {
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: var(--textp);
+    width: 100%;
+    padding: var(--navbarlist);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border: var(--borderline) var(--black);
+    border-radius: var(--borderradius);
+  } */
+  
+  .sign-in-card .login-gap {
+    height: 3rem;
+    line-height: 20px;
+    width: 100%;
+    padding: var(--navbarlist);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign-in-card .login-gap p {
+    color: var(--black);
+    font-size: var(--textp);
+  }
+  
+  .sign-in-card .login-gap p a {
+    color: var(--black);
+    text-decoration: underline;
+  }
+  
+  .suggest-login .entryarea i {
+    font-size: var(--heading);
+    padding-right: var(--button);
+  }
