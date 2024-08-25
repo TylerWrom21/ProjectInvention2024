@@ -33,7 +33,7 @@
   --largetext: 7.2rem;
   /* padding margin */
   --paddingh: 1.2rem;
-  --desktop: 5% 9%;
+  --desktop: 0 9%;
   --tablet: 0 4%;
   --navbar: 2rem 9%;
   --navbarlist: 1rem 1.5rem;
@@ -163,55 +163,11 @@ header .login li a {
 }
 
 /* homepage */
-
-
-/* Course */
-#course-land {
-  min-height: var(--fullheight);
-  padding: var(--desktop);
-  position: relative;
-  display: flex;
-}
-
-#course-land::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+/* .image {
   width: 100%;
-  height: 100%;
-  background-image: url(https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  filter: blur(6px);
-  background-position: center;
-  z-index: -99;
-}
+  height: auto;
+} */
 
-.course-land-area {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  background-color: red;
-  width: 40%;
-  z-index: 10;
-}
-
-
-.course-land-text h1 {
-  font-size: var(--heading);
-  padding-bottom: 1.2rem;
-
-}
-
-.course-land-text p {
-  font-size: 1.7rem;
-  line-height: 1.5;
-}
-
-#course-section {
-  background-color: #003366;
-  min-height: 100vh;
-}
 
 /* About */
 #about-page {

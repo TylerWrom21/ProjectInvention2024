@@ -55,11 +55,6 @@
     font-size: var(--heading);
     font-weight: var(--headerw);
   } */
-  .sign-in-card .entryarea {
-    position: relative;
-    height: 7.5rem;
-    /* padding: var(--navbarlist); */
-  }
   
   .sign-in-card h1 {
     font-size: var(--heading);
@@ -67,7 +62,7 @@
     color: var(--black);
   }
   
-  .sign-in-card .entryarea .labelline {
+  /* .sign-in-card .entryarea .labelline {
     font-size: var(--textp);
     font-weight: var(--textw);
     line-height: var(--logininput);
@@ -77,11 +72,11 @@
     margin: var(--tablet);
     color: var(--black);
     transition: var(--transition);
-    /* width: 450px; */
+    width: 450px;
     overflow: hidden;
-  }
+  } */
   
-  .sign-in-card button {
+  /* .sign-in-card button {
     font-size: var(--textp);
     letter-spacing: .1em;
     font-weight: var(--textw);
@@ -99,6 +94,19 @@
   .sign-in-card button:hover {
     background: var(--darkblue);
   }
+.field input,
+.field button,
+.field p {
+    width: 100%;
+    line-height: 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-size: var(--textp);
+    color: var(--black);
+    border: var(--borderline) var(--black);
+    border-radius: var(--borderradius);
+    transition: var(--transition);
+  } */
   
   /* .suggest-login .entryarea {
     display: flex;
@@ -147,8 +155,162 @@
     color: var(--black);
     text-decoration: underline;
   }
+  /* .label-line,
+  .field input:focus+label::before,
+  .field input:valid+label::before {
+    line-height: 20px;
+    font-size: var(--textp);
+    top: -10px;
+    background: var(--white);
+    padding: 0 .5rem;
+    left: 9px;
+    display: block; */
+    /* width: auto;
+  }
+  .field input:valid+label::after,
+  .field input:focus+label::after {
+
+  }
   
-  .suggest-login .entryarea i {
+  .sign-in-card .form-contact {
+    margin: 30px 10%;
+    width: 80%;
+  }
+  
+  .form-contact {
+    width: 100%;
+  }
+  
+  .form-contact .field {
+    position: relative;
+    margin-bottom: var(--header);
+  }
+  
+  .field label::before {
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    line-height: 40px;
+    font-size: var(--textp);
+    color: var(--black);
+    transition: 300ms all;
+    transition: var(--transition);
+  }
+.field input {
+    background: var(--white);
+  }
+  
+  .field p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  
+  .field p i {
     font-size: var(--heading);
     padding-right: var(--button);
   }
+  
+  .field p:hover {
+    background: var(--lightgray);
+    cursor: pointer;
+  }
+  
+  .field input:focus {
+    outline: 0;
+    border: var(--borderline) var(--orange);
+  }
+  
+  .field input:valid+label::before {
+    content: attr(data-title);
+  }
+  
+  .field input:focus+label::before {
+    color: var(--orange);
+  } */
+  .form__group {
+    position: relative;
+    padding: var(--navbarlist);
+    margin-top: var(--header);
+  }
+  
+  .form__field {
+    width: 100%;
+    border: 0;
+    border-bottom: var(--borderline) var(--black);
+    outline: 0;
+    font-size: 1.7rem;
+    color: var(--black);
+    padding: var(--button);
+    background: transparent;
+    transition: border-color var(--transition);
+  
+    &::placeholder {
+      color: transparent;
+    }
+  
+    &:placeholder-shown ~ .form__label {
+      font-size: var(--textp);
+      cursor: text;
+      top: 20px;
+    }
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: var(--transition);
+    font-size: var(--textp);
+  }
+  .form__field:focus {
+    border-bottom: var(--borderline) var(--orange);
+    /* font-size: 1.7rem; */
+  }
+  .form__field:focus ~ .form__label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: var(--transition);
+      font-weight: var(--headerw);
+      color: var(--orange);
+    }
+    .field {
+      padding: var(--navbarlist);
+    }
+    .field button {
+      background: var(--lightblue);
+      color: var(--white);
+    }
+    .field button:hover {
+      background: var(--darkblue);
+    }
+    .field button,
+    .field p {
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+      width: 100%;
+      line-height: 40px;
+      /* margin: 1rem 0; */
+      /* padding: 0 15px; */
+      font-size: var(--textp);
+      /* color: var(--black); */
+      border: var(--borderline) var(--black);
+      border-radius: var(--borderradius);
+      transition: var(--transition);
+    }
+    
+    .field p i {
+      font-size: var(--heading);
+      padding-right: var(--button);
+    }
+    
+    .field p:hover {
+      background: var(--lightgray);
+      cursor: pointer;
+    }

@@ -80,19 +80,32 @@
             <textarea name="message" placeholder="Input Text"></textarea>
           </div> -->
           <div class="detail-input">
-            <div class="field">
+            <!-- <div class="field">
               <input type="text" required autocomplete="off" id="name">
               <label for="name" title="Input Name"></label>
             </div>
             <div class="field">
               <input type="text" required autocomplete="on" id="email">
               <label for="email" title="Input Email"></label>
+            </div> -->
+            <div class="inputBox">
+              <input type="text" required="required">
+              <span>Enter Your Name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" required="required">
+              <span>Enter Your Email</span>
             </div>
           </div>
-          <div class="field">
-            <input type="number" required autocomplete="on" id="message">
-            <label for="phonenumber" title="Input Phone Number"></label>
+          <div class="inputBox inputTextArea">
+            <!-- <input type="text" required="required"> -->
+             <textarea name="message" id="message">Message</textarea>
+            <span>Enter Your Message</span>
           </div>
+          <!-- <div class="field">
+            <input type="text" required autocomplete="on" id="message">
+            <label for="message" title="Input Message"></label>
+          </div> -->
         </div>
       </div>
     </div>

@@ -25,11 +25,12 @@
   .contact-section .detail-input {
     display: flex;
     gap: 3rem;
+    padding-bottom: 3rem;
   }
   
-  .contact-section .detail-input .field {
+  /* .contact-section .detail-input .field {
     width: 50%;
-  }
+  } */
   
   .contact-container {
     width: 100%;
@@ -99,7 +100,7 @@
     width: 100%;
   }
   
-  .form-contact .field {
+  /* .form-contact .field {
     position: relative;
     margin-bottom: var(--header);
   }
@@ -124,7 +125,7 @@
     padding: 0 15px;
     box-sizing: border-box;
     font-size: var(--textp);
-    /* color: var(--black); */
+    color: var(--black);
     border: var(--borderline) var(--black);
     border-radius: var(--borderradius);
     transition: var(--transition);
@@ -173,14 +174,51 @@
     color: var(--black);
     background: var(--white);
     transition: var(--transition);
-    /* font-weight: var(--textw); */
-  }
+    font-weight: var(--textw);
+  } */
   
   /* .detail-input .contact-input input:valid,
   .detail-input .contact-input input:focus {
     border: var(--borderline) var(--lightblue);
   } */
-  .contact-textarea {
+.inputBox {
+  width: 100%;
+  position: relative;
+}
+.inputBox textarea,
+.inputBox input {
+  width: 100%;
+  padding: var(--button);
+  border: var(--borderline) var(--black);
+  color: var(--black);
+  background: transparent;
+  border-radius: var(--borderradius);
+  outline: none;
+  font-size: var(--textp);
+  resize: none;
+}
+.inputBox textarea {
+  min-height: 20rem;
+}
+.inputBox span {
+  position: absolute;
+  left: 2rem;
+  padding: var(--button);
+  pointer-events: none;
+  font-size: var(--textp);
+  color: var(--black);
+  font-weight: var(--headerw);
+  transition: var(--transition);
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span  {
+  color: var(--orange);
+  transform: translateX(-1rem) translateY(-3rem);
+  background: var(--white);
+}
+  /* .contact-textarea {
     width: 100%;
     padding-top: 3rem;
   }
@@ -190,4 +228,4 @@
     resize: none;
     height: 260px;
     padding: var(--paddingh);
-  }
+  } */
