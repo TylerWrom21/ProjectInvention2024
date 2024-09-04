@@ -3,22 +3,21 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: var(--white);
+    /* background: var(--white); */
   }
   
   .contact-main {
-    width: 100%;
-    height: var(--midheight);
-    background: var(--lightblue);
+    width: 30%;
+    position: relative;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
   
   .contact-section h1 {
-    font-size: var(--heading);
-    font-weight: var(--headerw);
+    font-size: var(--fontsize);
+    font-weight: var(--weight-medium);
     color: var(--black);
   }
   
@@ -34,9 +33,10 @@
   
   .contact-container {
     width: 100%;
-    border-radius: var(--mediumradius);
+    border-radius: var(--radius-32);
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 36px -12px inset, rgba(0, 0, 0, 0.3) 0px 12px 40px -12px inset;
+    /* box-shadow: var(--shadow1); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
   #contact .contact-map,
@@ -46,16 +46,22 @@
   
   /* .contact-main a i{
     color: var(--black);
-    font-size: var(--largetext);
-    font-weight: var(--textw);
-    padding: var(--paddingh);
+    font-size: var(--fontlarge);
+    font-weight: var(--weight-normal);
+    padding: var(--padding-height);
     border-radius: 50%;
     border: 1rem solid var(--black);
   } */
   .contact-main h1 {
-    font-size: var(--largetext);
-    font-weight: var(--largew);
+    font-size: var(--fontsize2);
+    font-weight: var(--weight-thin);
     color: var(--black);
+  }
+  .contact-main p {
+    font-size: var(--fontsize4);
+    font-weight: var(--weight-thin);
+    color: var(--black);
+    text-align: center;
   }
   
   #msg {
@@ -68,23 +74,25 @@
     flex-direction: column;
     width: 50%;
     border: var(--borderline) var(--black);
-    border-radius: var(--borderradius); */
+    border-radius: var(--radius-16); */
     padding: 2% 5%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
+    /* flex-direction: column; */
     gap: 3rem;
   }
   
   .contact-section h1 {
     padding-bottom: 1.2rem;
+    text-align: center;
   }
   
   /* .label-before, */
   .field input:focus+label::before,
   .field input:valid+label::before {
     line-height: 20px;
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     top: -10px;
     background: var(--white);
     padding: 0 6px;
@@ -102,7 +110,7 @@
   
   /* .form-contact .field {
     position: relative;
-    margin-bottom: var(--header);
+    margin-bottom: var(--fontsize2);
   }
   
   .field label::before {
@@ -111,7 +119,7 @@
     top: 0;
     left: 15px;
     line-height: 40px;
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     color: var(--black);
     transition: 300ms all;
   }
@@ -124,10 +132,10 @@
     line-height: 40px;
     padding: 0 15px;
     box-sizing: border-box;
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     color: var(--black);
     border: var(--borderline) var(--black);
-    border-radius: var(--borderradius);
+    border-radius: var(--radius-16);
     transition: var(--transition);
   }
   
@@ -143,8 +151,8 @@
   }
   
   .field p i {
-    font-size: var(--heading);
-    padding-right: var(--button);
+    font-size: var(--fontsize);
+    padding-right: var(--padding-button);
   }
   
   .field p:hover {
@@ -167,14 +175,14 @@
   
   .contact-input input{
     width: 100%;
-    padding: var(--navbarlist);
-    border-radius: var(--borderradius);
+    padding: var(--padding-navbarlist);
+    border-radius: var(--radius-16);
     border: var(--borderline) var(--black);
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     color: var(--black);
     background: var(--white);
     transition: var(--transition);
-    font-weight: var(--textw);
+    font-weight: var(--weight-normal);
   } */
   
   /* .detail-input .contact-input input:valid,
@@ -188,13 +196,13 @@
 .inputBox textarea,
 .inputBox input {
   width: 100%;
-  padding: var(--button);
+  padding: var(--padding-button);
   border: var(--borderline) var(--black);
   color: var(--black);
   background: transparent;
-  border-radius: var(--borderradius);
+  border-radius: var(--radius-16);
   outline: none;
-  font-size: var(--textp);
+  font-size: var(--fontsize9);
   resize: none;
 }
 .inputBox textarea {
@@ -203,11 +211,11 @@
 .inputBox span {
   position: absolute;
   left: 2rem;
-  padding: var(--button);
+  padding: var(--padding-button);
   pointer-events: none;
-  font-size: var(--textp);
+  font-size: var(--fontsize9);
   color: var(--black);
-  font-weight: var(--headerw);
+  font-weight: var(--weight-medium);
   transition: var(--transition);
 }
 .inputBox input:focus ~ span,
@@ -216,7 +224,7 @@
 .inputBox textarea:valid ~ span  {
   color: var(--orange);
   transform: translateX(-1rem) translateY(-3rem);
-  background: var(--white);
+  background: var(--bg-white2);
 }
   /* .contact-textarea {
     width: 100%;
@@ -227,5 +235,24 @@
     width: 100%;
     resize: none;
     height: 260px;
-    padding: var(--paddingh);
+    padding: var(--padding-height);
   } */
+@media only screen and (max-width: 991px) {
+  .contact-main p {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #contact {
+    padding: 0;
+  }
+  .contact-main p {
+    width: 80vw;
+  }
+  .contact-container {
+    border-radius: 0;
+  }
+  .contact-section .detail-input {
+    flex-direction: column;
+  }
+}

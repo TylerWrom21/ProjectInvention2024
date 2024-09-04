@@ -43,30 +43,30 @@
   .sign-in-card {
     width: 380px;
     background: var(--white);
-    padding: var(--navbarlist);
+    padding: var(--padding-navbarlist);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: var(--borderradius);
+    border-radius: var(--radius-16);
     position: relative;
     z-index: 10;
     /* border: var(--borderline) var(--black); */
   }
   
   /* .sign-in-card h1 {
-    font-size: var(--heading);
-    font-weight: var(--headerw);
+    font-size: var(--fontsize);
+    font-weight: var(--weight-medium);
   } */
   
   .sign-in-card h1 {
-    font-size: var(--heading);
-    padding-bottom: var(--header);
+    font-size: var(--fontsize);
+    padding-bottom: var(--fontsize2);
     color: var(--black);
   }
   
   /* .sign-in-card .entryarea .labelline {
-    font-size: var(--textp);
-    font-weight: var(--textw);
-    line-height: var(--logininput);
-    padding: var(--navbarlist);
+    font-size: var(--fontsize9);
+    font-weight: var(--weight-normal);
+    line-height: var(--fontsize);
+    padding: var(--padding-navbarlist);
     text-align: left;
     background: var(--white);
     margin: var(--tablet);
@@ -77,12 +77,12 @@
   } */
   
   /* .sign-in-card button {
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     letter-spacing: .1em;
-    font-weight: var(--textw);
-    line-height: var(--logininput);
-    padding: var(--navbarlist);
-    border-radius: var(--borderradius);
+    font-weight: var(--weight-normal);
+    line-height: var(--fontsize);
+    padding: var(--padding-navbarlist);
+    border-radius: var(--radius-16);
     border: var(--borderline) var(--black);
     background: var(--lightblue);
     color: var(--white);
@@ -101,10 +101,10 @@
     line-height: 40px;
     padding: 0 15px;
     box-sizing: border-box;
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     color: var(--black);
     border: var(--borderline) var(--black);
-    border-radius: var(--borderradius);
+    border-radius: var(--radius-16);
     transition: var(--transition);
   } */
   
@@ -114,7 +114,7 @@
     text-align: center;
     height: 7rem;
     border: var(--borderline) var(--black);
-    border-radius: var(--borderradius);
+    border-radius: var(--radius-16);
     width: 100%;
   } */
   
@@ -125,22 +125,22 @@
   .suggest-login  p {
     cursor: pointer;
     transition: var(--transition);
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     width: 100%;
-    padding: var(--navbarlist);
+    padding: var(--padding-navbarlist);
     align-items: center;
     justify-content: center;
     display: flex;
     text-align: center;
     border: var(--borderline) var(--black);
-    border-radius: var(--borderradius);
+    border-radius: var(--radius-16);
   } */
   
   .sign-in-card .login-gap {
     height: 3rem;
     line-height: 20px;
     width: 100%;
-    padding: var(--navbarlist);
+    padding: var(--padding-navbarlist);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@
   
   .sign-in-card .login-gap p {
     color: var(--black);
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
   }
   
   .sign-in-card .login-gap p a {
@@ -159,7 +159,7 @@
   .field input:focus+label::before,
   .field input:valid+label::before {
     line-height: 20px;
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     top: -10px;
     background: var(--white);
     padding: 0 .5rem;
@@ -183,7 +183,7 @@
   
   .form-contact .field {
     position: relative;
-    margin-bottom: var(--header);
+    margin-bottom: var(--fontsize2);
   }
   
   .field label::before {
@@ -192,7 +192,7 @@
     top: 0;
     left: 1rem;
     line-height: 40px;
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
     color: var(--black);
     transition: 300ms all;
     transition: var(--transition);
@@ -209,8 +209,8 @@
   }
   
   .field p i {
-    font-size: var(--heading);
-    padding-right: var(--button);
+    font-size: var(--fontsize);
+    padding-right: var(--padding-button);
   }
   
   .field p:hover {
@@ -232,8 +232,8 @@
   } */
   .form__group {
     position: relative;
-    padding: var(--navbarlist);
-    margin-top: var(--header);
+    padding: var(--padding-navbarlist);
+    margin-top: var(--fontsize2);
   }
   
   .form__field {
@@ -243,7 +243,7 @@
     outline: 0;
     font-size: 1.7rem;
     color: var(--black);
-    padding: var(--button);
+    padding: var(--padding-button);
     background: transparent;
     transition: border-color var(--transition);
   
@@ -252,7 +252,7 @@
     }
   
     &:placeholder-shown ~ .form__label {
-      font-size: var(--textp);
+      font-size: var(--fontsize9);
       cursor: text;
       top: 20px;
     }
@@ -263,7 +263,7 @@
     top: 0;
     display: block;
     transition: var(--transition);
-    font-size: var(--textp);
+    font-size: var(--fontsize9);
   }
   .form__field:focus {
     border-bottom: var(--borderline) var(--orange);
@@ -274,11 +274,11 @@
       top: 0;
       display: block;
       transition: var(--transition);
-      font-weight: var(--headerw);
+      font-weight: var(--weight-medium);
       color: var(--orange);
     }
     .field {
-      padding: var(--navbarlist);
+      padding: var(--padding-navbarlist);
     }
     .field button {
       background: var(--lightblue);
@@ -298,16 +298,16 @@
       line-height: 40px;
       /* margin: 1rem 0; */
       /* padding: 0 15px; */
-      font-size: var(--textp);
+      font-size: var(--fontsize9);
       /* color: var(--black); */
       border: var(--borderline) var(--black);
-      border-radius: var(--borderradius);
+      border-radius: var(--radius-16);
       transition: var(--transition);
     }
     
     .field p i {
-      font-size: var(--heading);
-      padding-right: var(--button);
+      font-size: var(--fontsize);
+      padding-right: var(--padding-button);
     }
     
     .field p:hover {

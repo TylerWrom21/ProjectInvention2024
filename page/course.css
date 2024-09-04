@@ -1,7 +1,7 @@
 /* Course */
 #course-land {
     min-height: var(--fullheight);
-    padding: var(--desktop);
+    padding: var(--padding-desktop);
     position: relative;
     display: flex;
   }
@@ -31,7 +31,7 @@
   
   
   .course-land-text h1 {
-    font-size: var(--heading);
+    font-size: var(--fontsize);
     padding-bottom: 1.2rem;
   
   }
